@@ -48,6 +48,7 @@ body {
   .button:hover {
     border: 1px solid #A4161A;
     background: #A4161A;
+    color:white;
   }
 
 /* Table */
