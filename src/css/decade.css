@@ -1,0 +1,226 @@
+/*-- The Following CSS webpage is a TEMPLATE and applicable to all webpages with a tag "DECADE"---*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/*-- Keep in mind that the header format should alwyas be the same regardless of the next background/video chosen--*/
+
+
+/*_________________________________________________________________*/
+
+.header {
+  min-height: 90vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 1, 30, 0.1), rgba(4, 1, 30, 0.1)), url(../images/decades/banner1.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 90px;
+  padding-top: 10px;
+}
+
+
+/*--Bakcground/ This is by all means no the final backgroubd, just an example--*/
+
+.page {
+  min-height: 50px;
+  width: 100%;
+  background-color: #0B090A;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/*_________________________________________________________________*/
+
+
+/*-- The following lines will correspond to the TEXT-BOX alignment /
+Please remeber that the position may be adjusted "left "top" --*/
+
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 50px;
+}
+
+
+/*_________________________________________________________________*/
+
+
+/*--- The button will return the user back to the main page --*/
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.btn:hover {
+  border: 1px solid #A4161A;
+  background: #A4161A;
+}
+
+
+/*_________________________________________________________________*/
+
+
+/*----Overview is a TEXT BUBBLE, where the brief information about tht decae will be located---*/
+
+.overview {
+  margin: 50px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/decades/banner2.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.overview h1 {
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 50;
+}
+
+
+/*_________________________________________________________________*/
+
+
+/*---AWARDS/YEAR---*/
+
+
+/*--This is the most important place of the PAGE
+It breaks down each recepient/year and has capabilities display key information
+--*/
+
+
+/*-- The row command enables us to lay out each recipient from left to right--*/
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #fff;
+}
+
+
+/*_________________________________________________________________*/
+
+
+/* YEARS covers entire format of the section / YEAR-k is Award- specific --*/
+
+.years {
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.years-k {
+  flex-basis: 30%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+h1 {
+  color: 777;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.years-k img {
+  height: auto;
+  width: 100%;
+}
+
+
+/*-- Hover/Cover elements --*/
+
+.cover {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 1s;
+}
+
+.cover:hover {
+  background: rgba(226, 0, 0, 0.7);
+}
+
+.cover h3 {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.cover:hover h3 {
+  bottom: 50%;
+  opacity: 1;
+}
+
+
+/*--Footer--*/
+
+.footer {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.footer h4 {
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
