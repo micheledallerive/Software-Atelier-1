@@ -1,4 +1,6 @@
 /*-- The Following CSS webpage is a TEMPLATE and applicable to all webpages with a tag "DECADE"---*/
+@import "core.css";
+
 
 * {
   margin: 0;
@@ -56,30 +58,6 @@ Please remeber that the position may be adjusted "left "top" --*/
 
 .text-box h1 {
   font-size: 50px;
-}
-
-
-/*_________________________________________________________________*/
-
-
-/*--- The button will return the user back to the main page --*/
-
-.btn {
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 12px 34px;
-  font-size: 13px;
-  background: transparent;
-  position: relative;
-  cursor: pointer;
-  transition: .5s;
-}
-
-.btn:hover {
-  border: 1px solid #A4161A;
-  background: #A4161A;
 }
 
 
