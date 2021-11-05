@@ -1,0 +1,11 @@
+/* DO NOT EDIT */
+@import "core.css";
+
+/* Image related */
+img {
+    width: 100%;
+}
+.brd-round {
+    margin: 0 20px 0 20px;
+    border-radius: 50px 20px;
+}
