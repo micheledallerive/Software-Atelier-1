@@ -1,0 +1,141 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=3cm]{geometry}
+\usepackage{url}
+\usepackage{dirtree}
+\usepackage{xcolor}
+
+
+\begin{document}
+
+
+\newcommand{\ttilde}[0]{\raisebox{0.5ex}{\texttildelow}}
+
+\begin{center}
+ \huge{\textbf{Turing Award recipients}}\\[.5em]
+ \Large{Project 2 Overview}
+\end{center}
+\vspace{3em}
+\tableofcontents
+
+\newpage
+\section{Introduction}
+This document will provide some information about our project (`Turing Award Recipients`). It also contains our CSS template and the website main features.
+The address of the GIT repository is: \url{@atelier.inf.usi.ch:/home/lambrr/project_sa1.git}
+
+\vspace{2em}
+
+\section{Roles}
+\begin{tabular}{p{.275\linewidth} p{.65\linewidth}}
+\textbf{Team leaders:} & Michele Dalle Rive, Sofia d'Atri\\[.3em]
+                        &\textbf{Duties:} Coordinate the team and check for the quality of everyone's work.\\[.5em]
+\textbf{CSS leaders:} & Alessandro Zanzi, George Batyrev\\[.3em]
+                        &\textbf{Duties:} Choose the color pallette and create consistent, organized and commented CSS code.\\[.5em]
+\textbf{Topic leaders:} & Michele Smaldone, Filippo Piloni,\newline Giorgio Bonetto, Federico Bonezzi\\[.3em]
+                        &\textbf{Duties:} Choose relevant content for the website and assign a subtopic to each team member.\\[.5em]
+\textbf{Git leader:} & Riccardo Lambrugo\\[.3em]
+                        &\textbf{Duties:} Organize correctly the GIT remote repository, keeping track of the commits and handling any problems.\\[.5em]
+\textbf{Bonus teams:} & To be defined\\[.3em]
+\textbf{Inactive members:} & Buonaventura, Gur, Liang, Liu, Singh
+\end{tabular}
+
+\vspace{2em}
+\section{Communication channels}
+WhatsApp groups:
+\begin{itemize}
+ \item \textbf{Group 2 SA:} Chat group with all team members
+ \item \textbf{Group 2 Leaders:} Chat group with Team, CSS, Topic and GIT Leaders
+ \item \textbf{Topic Leaders:} Chat group for the Topic Leaders
+\end{itemize}
+Discord server with different text and voice channel for CSS discussion, GIT discussion, Topic discussion, HTML discussion and general discussion.
+
+
+\newpage
+
+\section{Website organization}
+
+The 55 years of Turing Award are divided among the topic leaders:
+\begin{itemize}
+ \item \textbf{Topic leader 1:} 1966\ -\ 1979
+ \item \textbf{Topic leader 2:} 1980\ -\ 1992
+ \item \textbf{Topic leader 3:} 1993\ -\ 2006
+ \item \textbf{Topic leader 4:} 2007\ -\ 2020
+\end{itemize}
+Each topic leader will assign one or many years to each team member.
+\\[1em]
+The website will contain the following pages:
+\begin{itemize}
+ \item \texttt{/index.html}: Homepage of the website containing a timeline.
+ \item \texttt{/html/about.html}: Page containing general information about the Award.
+ \item Decade pages: 7 pages containing the winners for each decade (1960s - 2020s).
+ \item Winner pages: 55 pages (1 per year) containing the reason for that year award.
+ \item Biography pages: 27-55 pages (1 per year) containing a concise biography about that year's winners
+\end{itemize}
+Each Turing Award year has 2 HTML pages (Reason for the win and biography of the winners), so each team member will be assigned roughly to 2 Turing Award years.\\
+The total amount of pages will be \ttilde93-120 pages.
+
+
+
+
+
+\newpage
+
+\section{Repository organization}
+\dirtree{%
+.1 ./src/.
+.2 index.html.
+.2 css.
+.3 index.css.
+.3 colors.css.
+.3 biography.css.
+.3 core.css.
+.3 decade.css.
+.3 ....
+.2 html.
+.3 decade.html (template).
+.3 decades.
+.4 1980.
+.5 1980s.html (decade page).
+.5 1981.html.
+.5 1982.html.
+.5 ....
+.4 ....
+.3 about.html.
+.3 ....
+.2 documentation.
+.3 inception.
+.4 inception.tex.
+.4 inception.pdf.
+.3 ....
+.2 js.
+.3 ....
+.2 images.
+.3 logo.png.
+.3 decades.
+.4 1960.
+.4 1970.
+.5 1970.png.
+.5 1971.png.
+.5 ....
+.4 1980.
+.4 ....
+.3 ....
+}
+
+\newpage
+\section{CSS Layout}
+The files contained in the \texttt{/src/css/} folder are the stylesheets for the different pages:
+\begin{itemize}
+ \item \texttt{core.css}: Contains shared styles in the whole website
+ \item \texttt{colors.css}: Contains the color palette definition in order to be changed easily
+ \item \texttt{index.css}: Contains the style for the homepage.
+ \item \texttt{biography.css}: Contains the style for the biography of the winners
+ \item \texttt{decade.css}: Contains the style for the pages about each decade.
+\end{itemize}
+\vspace{.5em}
+The current color palette is:\\[.4em]
+\fcolorbox[HTML]{000000}{293241}{\rule{0pt}{6pt}\rule{6pt}{0pt}}\quad Primary \& Background color.\\[.69em]
+\fcolorbox[HTML]{000000}{98c1d9}{\rule{0pt}{6pt}\rule{6pt}{0pt}}\quad Secondary color.\\[.69em]
+\fcolorbox[HTML]{000000}{e0fbfc}{\rule{0pt}{6pt}\rule{6pt}{0pt}}\quad Text color.\\[.69em]
+\fcolorbox[HTML]{000000}{ee6c4d}{\rule{0pt}{6pt}\rule{6pt}{0pt}}\quad Accent color.\\
+\end{document}
