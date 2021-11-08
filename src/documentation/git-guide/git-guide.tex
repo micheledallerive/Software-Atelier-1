@@ -1,5 +1,6 @@
 \documentclass[a4paper,12pt]{article}
 \usepackage[utf8]{inputenc}
+\usepackage[margin=3cm]{geometry}
 
 \newcommand{\<}{\textless}
 \renewcommand{\>}{\textgreater}
@@ -27,7 +28,7 @@ In order to get the content of our git repository you need to clone it:
 \end{center}
 
 \section{File creation guidelines}
-In order to create an organized folder you need to follow this guidelines:
+Whenever you want to add a file, in order to keep the folder well organized you need to follow this guidelines:
 \begin{itemize}
  \item \textbf{Biography images}: The images of each Award winner's biography (e.g. Berners-Lee's biography) must follow the format:\\ 
  \texttt{./src/images/decades/\<decade of the award\>/\<year of the\\winner's win\>.(png or jpg)}\\[.33em]
@@ -37,13 +38,65 @@ In order to create an organized folder you need to follow this guidelines:
  \texttt{./src/images/decades/\<decade of the award\>/\\award\_\<year of the award\>.(png or jpg)}\\[.33em] 
  e.g. ./src/images/decades/2010/award\_2016.png (image of the WWW)
  
+ \item \textbf{HTML award page}: The HTML page for every year award (e.g. Award 2016 - Invention of WWW) must follow the format:\\
+ \texttt{./src/html/awards/\<decade of the award\>/<award year>.html}\\[.33em] 
+ e.g. ./src/html/awards/2010/2016.html
+ 
+ \newpage
+ 
+ \item \textbf{HTML decade page}: The HTML page for every decade (e.g. Decade 2010s) must follow the format:\\
+ \texttt{./src/html/awards/\<decade\>/decade.html}\\[.33em] 
+ e.g. ./src/html/awards/2010/decade.html
+ 
+ \item \textbf{HTML biography page}: The HTML page for a winner biography (e.g. Berners-Lee biography) must follow the format:\\
+ \texttt{./src/html/biographies/\<winner\_surname\>.html}\\[.33em] 
+ e.g. ./src/html/biographies/Berners\_Lee.html 
  
 \end{itemize}
 
 
+\section{Sync your code}
+Before editing your local code, you have to be sure to sync your code with the remote code. In order to achieve that, you need to execute the command \texttt{git pull}, which synchronizes your local code with the remote. It's \textbf{very important} that you always pull before you start to edit your code.
+
+
 \section{Submit the code changes}
 Once you downloaded the directory you can start addeding pages, images and editing the files. 
-\textbf{Remember} that you need to follow the CSS guidelines and the following 
+\textbf{Remember} that you always need to follow the \textbf{\textit{File creation guidelines}} (above) and the \textbf{\textit{CSS guidelines}} (see specific pdf).
+When you finish editing your files you have to push to the git repo your changes in order to let the other members see your changes. 
+The steps to push your changes are:
+\begin{itemize}
+ \item \textbf{Add your changes}: \texttt{git add \<list of files\>}\\
+ This command adds your changes to the current commit. You can add multiple files by adding a directory; you can also add multiple files by writing them inline. Remember to add \textbf{only} the files relevant for everyone (avoid adding temporary files, you personal notes, etc.).\\
+ E.g. \texttt{git add ./file.html}\\
+ \texttt{git add ./directory/}\\
+ \texttt{git add ./file1.html ./file2.html ./file3.html}
+ 
+ \item \textbf{Check the status of the commit}: \texttt{git status}\\
+ This command checks the status of your commit, displaying the files not staged (files added to the commit but not still commited) and the files that are untracked (file that are not added to your commit). It also tells you if your local git repo is up to date with the remote repository. Use this command \underline{a lot}: it's really useful.
+ 
+ \item \textbf{Commit your changes}: \texttt{git commit}\\
+ This command commits your changes, creating a commit in your local repository. This command commits only the files you added using \texttt{git add \<files\>}. This command opens the text editor with some lines commented with \#. After this lines you can add your commit message.\\
+ It's \textbf{extremely} important that you write a complete and accurate message, specifying each modification you made. Use multiple lines to describe each change.\\[.4em]
+ \textbf{Wrong commit message}: 'added a file'\\
+ \textbf{Right commit message}: 'Added file './.../file.html' containing the biography of Someone'
 
+ \item \textbf{Push to the remote repository}: \texttt{git push}\\
+ This command pushes your commits to the remote repository. Be sure that your commits are ok before pushing them using \texttt{git log}.
+ 
+ \item \textbf{Check the log of the commits}: \texttt{git log}\\
+ This command shows the log of the commit, with the commit messages. The '\texttt{origin/master}' commit is last remote commit, while the '\texttt{HEAD -> master}' commit is your last local commit.\\
+ Once you push your commits to the remote repository, the \texttt{origin/master} commit and the \texttt{HEAD -> master} should be the same.
+ 
+\end{itemize}
+
+\textbf{\underline{DON'T:}}
+\begin{itemize}
+ \item Try to solve any problem by yourself: contact us!
+ \item Create branches, force push or randomly merge
+ \item Mess up with the GIT, it's extremely \textbf{risky}
+\end{itemize}
+
+
+If you have any doubt, question or problem don't try to solve it by yourself because you risk to ruin the \textbf{\textit{whole}} group project. If you need anything just contact Riccardo, Michele or Sofia (phone numbers in the Introduction) and one of them will reply as soon as possible.
 
 \end{document}
