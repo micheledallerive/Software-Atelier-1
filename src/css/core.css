@@ -85,3 +85,32 @@ tbody td {
     color: var(--color-accent);
     transition: .3s ease-in-out;
 }
+
+/*--Footer--*/
+
+.footer {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .footer {
+    width: 100%;
+    text-align: center;
+    padding: 32px 0;
+  }
+  
+  .footer h4 {
+    color: #fff;
+    font-size: 25px;
+    float:left;
+    font-weight: 600;
+  }
+.footer p{
+    color:white;
+    float:right;
+}
+
+.footer p, .footer h4{
+    margin:16px 48px;
+}

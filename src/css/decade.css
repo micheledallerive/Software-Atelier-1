@@ -16,13 +16,13 @@
 
 .header {
   min-height: 90vh;
+  height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 1, 30, 0.1), rgba(4, 1, 30, 0.1)), url(../images/decades/banner1.png);
   background-position: center;
   background-size: cover;
   position: relative;
   overflow: hidden;
-  padding-bottom: 90px;
   padding-top: 10px;
 }
 
@@ -32,7 +32,7 @@
 .page {
   min-height: 50px;
   width: 100%;
-  background-color: #0B090A;
+  background-color: var(--color-bg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -48,7 +48,7 @@ Please remeber that the position may be adjusted "left "top" --*/
 
 .text-box {
   width: 90%;
-  color: #fff;
+  color: var(--color-text);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -58,6 +58,7 @@ Please remeber that the position may be adjusted "left "top" --*/
 
 .text-box h1 {
   font-size: 50px;
+  margin-bottom:16px;
 }
 
 
@@ -78,9 +79,13 @@ Please remeber that the position may be adjusted "left "top" --*/
 }
 
 .overview h1 {
-  color: #fff;
+  color: var(--color-text);
   margin-bottom: 40px;
   padding: 50;
+}
+
+.overview p{
+  font-size:.5em;
 }
 
 
@@ -107,7 +112,7 @@ h3 {
   text-align: center;
   font-weight: 600;
   margin: 10px 0;
-  color: #fff;
+  color: var(--color-text);
 }
 
 
@@ -117,32 +122,36 @@ h3 {
 /* YEARS covers entire format of the section / YEAR-k is Award- specific --*/
 
 .years {
-  width: 30%;
+  width: 100%;
   margin: auto;
   text-align: center;
-  padding-top: 25px;
+  padding: 32px 64px;
+}
+
+.years-row{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-gap:32px;
 }
 
 .years-k {
-  flex-basis: 30%;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  margin-right: auto;
-  position: relative;
-  overflow: hidden;
-}
-
-h1 {
-  color: 777;
-  width: 70%;
-  margin: auto;
-  text-align: center;
-  padding-top: 30px;
+  margin:auto;
+  border-radius:10px;
+  overflow:hidden;
+  position:relative;
 }
 
 .years-k img {
   height: auto;
   width: 100%;
+}
+
+h1 {
+  color: var(--color-text);
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  padding-top: 30px;
 }
 
 
@@ -163,42 +172,20 @@ h1 {
 }
 
 .cover h3 {
-  width: 100%;
   font-weight: 500;
-  color: #fff;
+  color: var(--color-text);
   font-size: 26px;
+}
+
+.cover div{
+  width: 100%;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
   position: absolute;
   opacity: 0;
   transition: 0.5s;
 }
 
-.cover:hover h3 {
-  bottom: 50%;
+.cover:hover div {
+  bottom: 40%;
   opacity: 1;
-}
-
-
-/*--Footer--*/
-
-.footer {
-  width: 50%;
-  position: relative;
-  overflow: hidden;
-}
-
-.footer {
-  width: 100%;
-  text-align: center;
-  padding: 50px 0;
-}
-
-.footer h4 {
-  color: #fff;
-  font-size: 25px;
-  margin-bottom: 25px;
-  margin-top: 20px;
-  font-weight: 600;
 }
