@@ -1,0 +1,3 @@
+./documentation/git-guide/*
+!./documentation/git-guide/git-guide.pdf
+!./documentation/git-guide/git-guide.tex
