@@ -1,6 +1,7 @@
 \documentclass[a4paper,12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[margin=3cm]{geometry}
+\usepackage{hyperref}
 
 \newcommand{\<}{\textless}
 \renewcommand{\>}{\textgreater}
@@ -15,4 +16,84 @@
 \tableofcontents
 
 \newpage
+\section{Introduction}
+This document contains guidelines about the information research for your topics and the actual HTML coding to create your webpages. It's important that you follow this guidelines when you create your pages and the git guidelines to commit your changes.
+
+The templates of the pages that you will use to create your own pages are in \texttt{./src/html/templates/}, one for each type of topic. You just need to copy the page from there, paste it in the right folder and start editing it. Obviously, you \textbf{must not} directly edit the original templates, as it could mess up everything; you must copy it and edit your copy of the template.
+
+All the HTML files have an already working \texttt{<base>} attribute in the header, so that your base link url is the \texttt{./src/} folder. This means that if you need to include an image in your HTML it's source will be \texttt{images/.../image.png} and not, for example, \texttt{../../images/.../image.png}.
+
+You are \textbf{required} to write your name and surname in the footer of every page, by editing 'Page made by: Name Surname' at the end of the HTML files.
+
+If you have any doubt about your pages, you can write it in the \#css-discussion in the Discord server (\underline{recommended}) or ask the team leaders or the CSS leaders directly.
+
+\section{Research}
+
+Each group member received some topics:
+\begin{itemize}
+ \item \textbf{Turing award [year]}: You have to search information about the research that won that year and why it's important (and the consequences of that discovery).\\[.4em]
+ E.g. Turing award 2016 -\> Information about World Wide Web and why it's important.
+
+ \item \textbf{Biography [name]}: You have to search information about the biography of that person and his main works/discoveries.\\[.4em]
+ E.g. Biography Berners-Lee -\> Information about Berners-Lee life and works.
+ 
+ \item \textbf{Decade [year]-[year]}: You have to search some information about what happened in that specific decade. However, this topic is more about HTML/CSS coding rather than information research.
+ 
+\end{itemize}
+
+About the amount of information to search, try to stick to the amount of text in the template pages and make sure that you include the most important information about that award/biography. However, be sure to don't write too much or to include useless information, as it makes the text longer for no important reason. A good amount of content is about 200-350 words.
+
+\textbf{\underline{IMPORTANT}}\quad Our website content will be checked by a \textbf{plagiarism checker}: when you search for information about your topic, please remember to don't just copy-paste but rather write the information with your own words.
+
+\section{Images guidelines}
+How to store the images in our project directory is already specified in the GIT guide (check it as soon as possible if you haven't already).\\
+It's important that you make sure to use images that are relevant to your topic and have a good resolution, in order to keep the quality of the website high.
+
+\section{Biography pages}
+
+These are the steps to edit the biography page with your own content:
+\begin{itemize}
+ \item \textbf{Copy the template}: Copy the template from \\ \texttt{./src/html/templates/biography.html} to\\ \texttt{./src/html/biographies/[surname].html} (all the informations about where to create the files and how to name them are written in the GIT guidelines)
+ 
+ \item \textbf{Change the title}: Edit the \texttt{\<title\>} tag using the format 'name surname | Turing Awards'
+ 
+ \item \textbf{Edit the text}: The structure of the page is defined by the Bootstrap grid system: there is a \texttt{.row} container that contains two \texttt{.col}: one is the text and one is the image. You can change the content of the first \texttt{.col} div as you prefer (it will appear on the left). For more information about the Bootstrap grid system check their \href{https://getbootstrap.com/docs/5.1/layout/grid/}{Guide}
+ 
+ \item \textbf{Edit the image}: You have to change the image (which is inside the second \texttt{.col} div, by replacing the current \texttt{src} attribute to the path of your image (file naming is already described in the git guidelines).\\ Remember that every path in your html page is already based in \texttt{./src/}.
+ 
+ \item \textbf{Useful classes}: This are some important classes that could be useful to you.
+    \begin{itemize}
+     \item You can use the class \texttt{paragraph} to justify text and format it.
+     \item You can use the class \texttt{brd-round} to round the borders of an element. It's useful to round \texttt{<img>} borders.
+     \item To center something you can wrap it with a div with the classes \texttt{d-flex justify-content-center align-items-center}
+     \item To create a title you can use the class \texttt{title} inside an header tag.
+    \end{itemize}
+ 
+ \item \textbf{Create link}: To create a link you need to add the class \texttt{link} to a \texttt{<a>} for example:\\
+ \texttt{<a href='' class='link'>test</a>}
+ 
+ \item \textbf{Create a button}: To create a button you can use a \texttt{<a>} with the class \texttt{button} class.\\
+ \texttt{<a href='' class='button'>test</a>}
+ 
+ \item \textbf{Create a table}: To create a table you can create a normal html table structure using the class \texttt{tbl} inside the \texttt{<table>} tag.
+\end{itemize}
+
+
+\section{Award pages}
+
+\begin{itemize}
+ \item \textbf{Copy the template}: Copy the template from\\ \texttt{./src/html/templates/award.html}\\ to \texttt{./src/html/[decade of the award]/[year of the award].html} (all the informations about where to create the files and how to name them are written in the GIT guidelines)
+ 
+ \item \textbf{Change the title}: Edit the \texttt{\<title\>} tag using the format 'Award [year] | Turing Awards'
+ 
+ \item All the other HTML and CSS guidelines are the same of the biography pages
+\end{itemize}
+
+\section{Decade pages}
+\begin{itemize}
+ \item \textbf{Background image}: Every decade page begins with a full-page background image. The image should be related to the style of that particular decade and it's important that the resolution of the image is high enough. You can just change the \texttt{src} attribute of the image inside the \texttt{header} container.
+ \item \textbf{Change decade summary}: Every decade has a short summary of its main IT breakthroughs. You can change it by changing the text inside the \texttt{<p>} inside the section with \texttt{overview} class.
+ \item \textbf{Display the recipients}: Each Turing Award of that decade should be displayed using an image that works as a button and that redirects to that year's award. In order to create the button-picture you need to copy the \texttt{year-k} div. You have to change the \texttt{href} attribute of the \texttt{<a>} to that year's award page, the image to the picture of one of that year's winners and the content of the h3s in the \texttt{cover} div to the name of the winners and the year of the win, just as the template shows. 
+\end{itemize}
+
 \end{document}

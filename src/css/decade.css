@@ -18,12 +18,16 @@
   min-height: 90vh;
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4, 1, 30, 0.1), rgba(4, 1, 30, 0.1)), url(../images/decades/banner1.png);
-  background-position: center;
-  background-size: cover;
   position: relative;
   overflow: hidden;
-  padding-top: 10px;
+}
+
+.header img{
+  z-index: -1;
+  width:100vw;
+  height:100vh;
+  object-fit:cover;
+  filter:brightness(69%);
 }
 
 

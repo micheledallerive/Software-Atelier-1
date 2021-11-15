@@ -1,0 +1,69 @@
+<!-- DO NOT EDIT -->
+<!-- COMMENT WRITTEN BY GIT LEADER TO CHECK IF PERMISSIONS ARE OKAY -->
+<!-- APPARENTLY THEY ARE OK -->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8"/>
+      <title>Model checking | Turing Awards</title>
+      <base href="../../../"/>
+      <link rel="stylesheet" href="css/biography.css"/>
+   </head>
+   <body>
+      <!--    NAVBAR    -->
+      <nav class="navbar navbar-light px-3 py-3">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+            <img alt="turing_logo" height="60px" src="images/logo.svg"/>
+            </a>
+            <a href="#">
+            <img src="images/menu.svg" alt="menu" height="100px" width="100px">
+            </a>
+         </div>
+      </nav>
+      <!--    MAIN    -->
+      <section class="container clr-light">
+         <!-- Element: Title -->
+         <h1 class="title">Turing Award 2007</h1>
+         <!-- Element: Split Screen -->
+         <div class="row">
+            <div class="col-md-7 paragraph">
+               <!-- Element: Subtitle -->
+               <h2 class="subtitle">Winners: Edmundo M. Clarke, Joseph Sifakis, E. Allen Emerson</h2>
+               <h3>The Model Checking </h3>
+                  <p>The Association for Computing Machinery (ACM) has named Edmund M. Clarke, E. Allen Emerson, and Joseph Sifakis the winners of the 2007 A.M. Turing Award for their original and continuing research in a quality assurance process known as model checking.
+                    Model checking is an automatic technique for verifying if finite-state reactive systems, such as sequential circuit designs and communication protocols, meet a given specification.
+                    This is typically associated with hardware or software, where the specification contains liveness and safety requirements.
+                  </p>
+                  <h3> A bit of History </h3>
+                     <p>
+                       In the past, researchers had problems in developing logical forms better-suited to describing computer systems. One of the first who managed to solve it was Tony Hoare, who discovered that Hoare’s logic could be used to prove that every possible execution of a system would only execute an acceptable sequence of operations. Then, in 1977, Amir Pnueli introduced temporal logic, an alternative logic for verifying computer reasoning in terms of time.
+                       Clarke and his student E. Allen Emerson saw an important possibility in temporal logic: it could be directly checked by machine.
+                       Clarke and Emerson realized that a program could exhaustively construct every possible sequence of actions a system might perform, and for every action it could evaluate a property expressed in temporal logic. If the program found the property to be true for every possible action in every possible sequence, this proved the property for the system.
+                       A powerful feature of the model checking approach is that when it detects a problem in a system design, the checker prints out an example sequence of actions that gives rise to the problem, letting the designer know precisely the source of the problem's location.
+                       But until that moment that approach was only theoretical. In fact, the number of states to search in real systems is huge, and early model checkers required explicitly computing every possible configuration of values the program might assume. So, although early model checkers demonstrated that the technology was feasible for small systems, it was not ready for wider use.
+                       But Clarke and his student Ken McMillan had a fundamental insight: the number of combinations explodes because the number of states a memory location can assume is much bigger than the size of the location itself. Clarke and McMillan observed that with the right encoding, many potential states could be represented by a single value. The new representation dramatically reduced the storage required to represent states, allowing the model checker to run on systems of practical size.
+                     </p>
+                 <h3> The algorithm </h3>
+                     <p>
+                       Even if Model-checking has been developed for checking models of hardware and software,  it is most often applied to hardware designs. For softwares in fact, because of their undecidability, the approach cannot be fully algorithmic, be applicable to all systems, and always give an answer: in fact, as explained in the computation theory by Alan Turing, a program cannot determine if an inputted program is correct or not.
+                       The program they developed converted the system to a graph consisting of nodes and edges, so, in this way, model checking is reduced to a graph search.
+                      </p>
+                  <h3> Daily life usage </h3>
+                      <p>
+                        Their innovations revolutionized how technology’s verification is done, making daily used systems safier a more reliable. Nowadays lots of hardware and software companies rely heavily on model checking. Common examples where this model is used daily are designs for integrated circuits, such as microprocessors, communication protocols, software device drivers, real-time embedded systems, and security algorithms. Furthermore, among the beneficiaries of model checking are personal computer users and nuclear power plant operators.
+                        So, in the end, model checking represents a significant investment in  making human lives easier and safer.
+                      </p>
+            </div>
+            <!-- Element: Image -->
+            <div class="col-md-5">
+               <img class="brd-round" src="images/decades/2000/2007.jpg">
+            </div>
+         </div>
+      <section class="footer">
+         <h4>In memory of A.M. Turing</h4>
+         <p> Page made by: Cristiano Masutti
+         </p>
+      </section>
+   </body>
+</html>
