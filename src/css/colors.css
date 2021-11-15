@@ -1,9 +1,9 @@
 :root { /* <-- Change colors here */
-    --color-accent: #ee6c4d;
-    --color-secondary: #98c1d9;
-    --color-text: #e0fbfc;
-    --color-bg: #293241;
-    --color-light: #3d5a80;
+    --color-accent: #ba181b;
+    --color-secondary: rgb(214, 85, 81);
+    --color-text: #F5F3F4;
+    --color-bg: #161A1D;
+    --color-light: #c9c2c2;
 }
 
 /* Color classes */
