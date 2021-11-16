@@ -1,14 +1,27 @@
 :root { /* <-- Change colors here */
+  /* Color Pairs for dark and light mode */
     --color-accent: #ba181b;
+    --color-accent-dark: #F0571D;
+
     --color-secondary: rgb(214, 85, 81);
-    --color-text: #F5F3F4;
-    --color-bg: #161A1D;
+    --color-secondary-dark: #F0A266;
+
+    --color-text-light: #F5F3F4;
+    --color-text-dark: #303030;
+
+    --color-bg: #003844;
+    /* Old bg color darkgrey --color-bg: #293241; */
+
     --color-light: #c9c2c2;
 }
 
 /* Color classes */
 .clr-light {
-    color: var(--color-text);
+    color: var(--color-text-light);
+}
+
+.clr-dark {
+    color: var(--color-text-dark);
 }
 
 .clr-accent {
