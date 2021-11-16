@@ -1,6 +1,10 @@
 /* DO NOT EDIT */
 @import "core.css";
 
+.navbar-brand img {
+    height: 75px;
+}
+
 /* Image related */
 img {
     width: 100%;
