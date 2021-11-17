@@ -63,6 +63,7 @@ Please remeber that the position may be adjusted "left "top" --*/
 .text-box h1 {
   font-size: 50px;
   margin-bottom:16px;
+  color: var(--color-text-light);
 }
 
 
@@ -151,7 +152,7 @@ h3 {
 }
 
 h1 {
-  color: var(--color-text-light);
+  color: var(--color-text);
   width: 70%;
   margin: auto;
   text-align: center;
@@ -194,7 +195,7 @@ h1 {
   opacity: 1;
 }
 
-.button{
+.text-box .button{
   border-color:var(--color-text-light);
   color:var(--color-text-light);
 }
