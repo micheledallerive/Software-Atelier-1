@@ -1,18 +1,10 @@
 :root { /* <-- Change colors here */
   /* Color Pairs for dark and light mode */
-    --color-accent: #ba181b;
-    --color-accent-dark: #F0571D;
-
-    --color-secondary: rgb(214, 85, 81);
-    --color-secondary-dark: #F0A266;
-
-    --color-text-light: #F5F3F4;
-    --color-text-dark: #303030;
-
-    --color-bg: #003844;
-    /* Old bg color darkgrey --color-bg: #293241; */
-
-    --color-light: #c9c2c2;
+  --color-accent: #BA181B;
+  --color-secondary: #D65551;
+  --color-text: #303030;
+  --color-bg: #F1F1E6;
+  --filter-invert: 0%;
 }
 
 /* Color classes */
