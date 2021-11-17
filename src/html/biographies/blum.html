@@ -9,6 +9,8 @@
       <title> Manuel Blum | Turing Awards</title>
       <base href="../../"/>
       <link rel="stylesheet" href="css/biography.css"/>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script src="js/dark.js"></script>
    </head>
    <body>
       <!--    NAVBAR    -->
@@ -19,6 +21,14 @@
             </a>
             <a href="#">
             </a>
+            <div style="display:flex">
+               <a href="#">
+               <img class="svg" src="images/menu.svg" alt="menu" height="100px" width="100px">
+               </a>
+               <a href="#" id="switchDarkMode" title="Click to switch to dark mode">
+               <img class="svg" id="darkModeIcon" src="images/darkmode.svg" alt="menu" height="100px" width="100px">
+               </a>
+               </div>
          </div>
       </nav>
       <!--    MAIN    -->
@@ -30,8 +40,6 @@
             <div class="col-md-7 paragraph">
                <!-- Element: Subtitle -->
                <h2 class="subtitle">Biography</h2>
-               <br>
-               <img src="https://amturing.acm.org/images/lg_aw/4659082.jpg" width="400">
                <br>
                <p>
           Manuel Blum, born in 26 April 1938, is a Venezuelan-American computer scientist and received the Turing Award in 1995 "In recognition of his contributions to the foundations of computational complexity theory and its application to cryptography and program checking".
@@ -59,15 +67,10 @@ Blum is also known as the advisor of many prominent researchers.
             </div>
             <!-- Element: Image -->
             <div class="col-md-5">
+              <img class="brd-round" src="images/decades/1990/1995.png" alt="menu"  width="350px" >
             </div>
          </div>
-         <!--TODO: Add table-->
-         <div class="d-flex justify-content-center">
-            <
-         </div>
       </section>
-      <!--TODO: Add link a tag-->
-      <a class="link" href="#">This is a link</a>
       <section class="footer">
          <h4>In memory of A.M. Turing</h4>
          <p> Page made by: Nicolo' Magrin

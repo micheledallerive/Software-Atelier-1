@@ -52,7 +52,7 @@ Please remeber that the position may be adjusted "left "top" --*/
 
 .text-box {
   width: 90%;
-  color: var(--color-text);
+  color: var(--color-text-light);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -83,7 +83,7 @@ Please remeber that the position may be adjusted "left "top" --*/
 }
 
 .overview h1 {
-  color: var(--color-text);
+  color: var(--color-text-light);
   margin-bottom: 40px;
   padding: 50;
 }
@@ -116,7 +116,7 @@ h3 {
   text-align: center;
   font-weight: 600;
   margin: 10px 0;
-  color: var(--color-text);
+  color: var(--color-text-light);
 }
 
 
@@ -151,7 +151,7 @@ h3 {
 }
 
 h1 {
-  color: var(--color-text);
+  color: var(--color-text-light);
   width: 70%;
   margin: auto;
   text-align: center;
@@ -176,8 +176,8 @@ h1 {
 }
 
 .cover h3 {
-  font-weight: 500;
-  color: var(--color-text);
+  font-weight: 600;
+  color: var(--color-text-light);
   font-size: 26px;
 }
 
@@ -192,4 +192,9 @@ h1 {
 .cover:hover div {
   bottom: 40%;
   opacity: 1;
+}
+
+.button{
+  border-color:var(--color-text-light);
+  color:var(--color-text-light);
 }

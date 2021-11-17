@@ -1,14 +1,21 @@
 :root { /* <-- Change colors here */
-    --color-accent: #ba181b;
-    --color-secondary: rgb(214, 85, 81);
-    --color-text: #F5F3F4;
-    --color-bg: #161A1D;
-    --color-light: #c9c2c2;
+  /* Color Pairs for dark and light mode */
+  --color-accent: #BA181B;
+  --color-secondary: #D65551;
+  --color-text: #303030;
+  --color-bg: #F1F1E6;
+  --filter-invert: 0%;
+
+  --color-text-light: #C9C2C2; /* color text for the text always on a dark background (e.g. decade page) */
 }
 
 /* Color classes */
 .clr-light {
-    color: var(--color-text);
+    color: var(--color-text-light);
+}
+
+.clr-dark {
+    color: var(--color-text-dark);
 }
 
 .clr-accent {
