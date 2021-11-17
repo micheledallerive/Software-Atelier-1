@@ -1,6 +1,10 @@
 /* DO NOT EDIT */
 @import "core.css";
 
+.navbar-brand img {
+    height: 75px;
+}
+
 /* Image related */
 img {
     width: 100%;
@@ -9,3 +13,5 @@ img {
     margin: 0 20px 0 20px;
     border-radius: 50px 20px;
 }
+
+/* Changes for Dark/Light mode switcher */
