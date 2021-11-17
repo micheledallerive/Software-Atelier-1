@@ -1,0 +1,138 @@
+<!-- DO NOT EDIT -->
+<!-- COMMENT WRITTEN BY GIT LEADER TO CHECK IF PERMISSIONS ARE OKAY -->
+<!-- APPARENTLY THEY ARE OK -->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8"/>
+      <meta name="author" content="NIcola Perucchi"/>
+      <title>Award 2015 | Turing Awards</title>
+      <base href="../../../"/>
+      <link rel="stylesheet" href="css/biography.css"/>
+   </head>
+   <body>
+      <!--    NAVBAR    -->
+      <nav class="navbar navbar-light px-3 py-3">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+            <img alt="turing_logo" height="60px" src="images/logo.svg"/>
+            </a>
+            <a href="#">
+            <img src="images/menu.svg" alt="menu" height="100px" width="100px">
+            </a>
+         </div>
+      </nav>
+      <!--    MAIN    -->
+      <section class="container clr-light">
+         <!-- Element: Title -->
+         <h1 class="title">Turing Award 2015</h1>
+         <!-- Element: Split Screen -->
+         <div class="row">
+            <div class="col-md-7 paragraph">
+               <!-- Element: Subtitle -->
+               <h2 class="subtitle">Winners: Martin Hellman and Whitfield Diffie</h2>
+                  <p>
+                     In 2015 two people were awarded the Turing Award; Whithfield Diffie and Martin Hellman.
+                     Bailey Whitfield DIffie was born on June 5<sup>th</sup>, 1944 and is an American cryptographer. Diffie graduated form the
+                     Massachussetz Institute of Technology (MIT)in 1965. Martin Edward Hellman was born on Octiber 2<sup>nd</sup>, 1945 and conducted
+                     his studies at New York University in electrical engineering. In 1976, DIffie and Hellman wrote <strong>
+                     "New Directions in Cryptography"</strong>.
+                  </p>
+                  <p>
+                     They got awarded because theire work introduced the ideas of <em>public key Cryptography</em> and <em> digital signatures </em>.
+                     They have been also able to solve the problem of exchanging keys between two parties.
+                  </p>
+                  <br>
+               <h3> What is Cryptography? </h3>
+                  <p>
+                      Cryptography is the field of cryptology that deals with the subject of "hidden writings".
+                      More precisely, ir deals with making certain wiritngs unreadbale to unauthrized persons,
+                      thus ensuring the requirement of confidentziality and <em> computer security </em>.
+                  </p>
+                  <br>
+               <h3> Public-Key Cryptography </h3>
+                  <p>
+                     <strong> Public key cryptography </strong> is also known as <strong> asymmetric cryptography</strong>,
+                     or <strong> key pair cryptography</strong>.
+                     In this type of hidden communication, a key pair i sassigned to each party involved in the communication:
+                     <ul>
+                        <li> public key, which must be publicly distributed </li>
+                        <li> private key, which is a personal key and must be kept secret </li>
+                     </ul>
+                  </p>
+                  <p>
+                     The operation of thi mechanism is based on the idea that if one key takes care of encrypting the code or message,
+                     the other takes care of decrypting it.
+                     Specifically, anyone can encrypt a message with the recipient's public key,
+                     but only the recipient can decrypt the message with his private key.
+                  </p>
+                  <br>
+               <h3> Diffie-Hellman Key Exchange</h3>
+                   <p>
+                     Diffie and Hellman's publication was the first research that proposed the creation of a public key and a
+                     corresponding pirvate key. One of the first public-key protocols is indeed name after Diffie and Hellman;
+                      i.e. <strong>Diffie-Hellman key exchange</strong>.
+                  </p>
+                  <p>
+                     Traditionally, two people that wanted who wanted to communicate securely had to first exchange keys phsyically
+                     and securely.
+                     The protocol suggested by Diffie and Hellman creates a shared secret between two parties, which allows confidential
+                     communication over a non-secure (public) network.
+                  </p>
+                  <br>
+               <h3> Basic Concept of the Diffie-Hellman Key Exchange </h3>
+                  <details>
+                  <p>
+                     To explain the basic idea behind this cryptographymethod we will use as an example two subjects, i.e. Alice and Bob,
+                     and instead of using numbers we will use colors:
+                  </p>
+                  <p>
+                     <ul>
+                        <li> first of all Alice and Bob must agree on a color (yellow) that remains public and must not be kept secret.</li>
+                        <li>The second step consists on choosing two colors that both individuals must kepp secret; red for alice, and sea green for Bob.</li>
+                        <li>The most important step in this encryption process occurs at this point: Alice and Bob must now mix the color
+                            they have publicly agreed upon with the color they kept secret. Resulting in an orange for Alice and light blue for Bob.</li>
+                        <li>At this point, Alice and Bob must send each other the resulting color form this mix.</li>
+                        <li>Finally, they both have to mix the colors they received with their own private color.</li>
+                        <li>The result is a "yellow-brown" color mix that is the same as the color the partner of the converstaion will get.</li>
+                     </ul>
+                  </p>
+                  </details>
+                  <br>
+                  <br>
+               <h3>The Concept of a Digital Signature</h3>
+                  <p>
+                     With their research named <em>"New Directions in Cryptography"</em> Diffie and Hellman also introduced the notion of a digital siganture
+                     scheme. A digital signature is a mathematical method of guranteeing the authenticity of a message or document sent by a sender to an
+                     intended recipient over a non secured communication channel.
+                  </p>
+                  <p>
+                     This porcess is neacessary beacuse:
+                     <ul>
+                        <li>it makes possible to check that the sender of the message is actually who they say they are;</li>
+                        <li>the sender cannot deny that it was him who sent the message/document;</li>
+                        <li>the message is not modified in the path between the sender and the recipient.</li>
+                      </ul>
+                  </p>
+               <!--TODO: Add link button-->
+               <div class="d-flex justify-content-center align-items-center">
+                  <a href="./html/templates/biography.html" class="button">Go to Wilkinson's biography</a>
+               </div>
+            </div>
+            <!-- Element: Image -->
+            <div class="col-md-5">
+               <img class="brd-round" src="images/decades/2010/award_2015.png">
+            </div>
+         </div>
+         <!--TODO: Add table-->
+         
+      </section>
+      <!--TODO: Add link a tag-->
+      <a class="link" href="#">This is a link</a>
+      <section class="footer">
+         <h4>In memory of A.M. Turing</h4>
+         <p> Page made by: Nicola Perucchi
+         </p>
+      </section>
+   </body>
+</html>
