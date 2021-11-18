@@ -170,7 +170,10 @@ nav img{
 /*---------------------------------------------------------------*/
 .footer {
 	padding: 30px;
-	background-image: linear-gradient(60deg, #001a33  0%, #000000  100%);
+	bbackground-image: linear-gradient(to left,
+     #000000, #0a0507, #110910, #140e17, #15131d, #15131d,
+     #15131d, #15131d, #140e17, #110910, #0a0507, #000000);
+	color: white;
 	color: white;
 }
 	..footer {
