@@ -58,6 +58,28 @@ nav img{
   text-align: right;
 }
 /*---------------------------------------------------------------*/
+
+p{
+  font-size: 20px;
+  text-align: right;
+  font-weight: 200;
+
+}
+.quote--container {
+    margin: 25px auto 0;
+    padding-bottom: 120px;
+    padding-right: 30px;
+    position: relative;
+    font-style: italic;
+    filter:brightness(60%);
+}
+
+.quote--highlight {
+    color: #f0571d;
+}
+
+
+/*---------------------------------------------------------------*/
 .text-box{
         width: 90%;
         color: #fff;
@@ -133,7 +155,6 @@ nav img{
 }
 
 
-
 #timelines .timeline-info h1 {
 	font-size: 4rem;
 	font-weight: 600;
@@ -170,13 +191,13 @@ nav img{
 /*---------------------------------------------------------------*/
 .footer {
 	padding: 30px;
-	bbackground-image: linear-gradient(to left,
+ background-image: linear-gradient(to left,
      #000000, #0a0507, #110910, #140e17, #15131d, #15131d,
      #15131d, #15131d, #140e17, #110910, #0a0507, #000000);
 	color: white;
 	color: white;
 }
-	..footer {
+	.footer {
       width: 50%;
       position: relative;
       overflow: hidden;
@@ -186,13 +207,18 @@ nav img{
       width: 100%;
       text-align: center;
       padding: 32px 0;
+
     }
 
     .footer h4 {
       font-size: 25px;
       float:left;
       font-weight: 400;
+        filter:brightness(60%);
     }
   .footer p{
       float:right;
+      font-size: 25px;
+        filter:brightness(60%);
+
   }
