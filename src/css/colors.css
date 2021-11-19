@@ -10,13 +10,18 @@
 }
 
 /* Color classes */
+
+/*
+
+Classes used by the old dark/light mode switcher
+
 .clr-light {
     color: var(--color-text-light);
 }
 
 .clr-dark {
     color: var(--color-text-dark);
-}
+} */ 
 
 .clr-accent {
     color: var(--color-accent);

@@ -29,7 +29,7 @@ let savedLightMode = localStorage.getItem("lightMode");
 let lightMode = savedLightMode!=null?JSON.parse(savedLightMode):false;
 changeColors(lightMode);
 $(document).ready(function(){
-  changeIcon();
+  changeIcon(lightMode);
   $("#switchDarkMode").click(function(e){
     e.preventDefault();
     lightMode = !lightMode;
