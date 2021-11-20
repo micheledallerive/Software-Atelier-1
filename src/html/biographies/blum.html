@@ -23,21 +23,24 @@
    </head>
    <body>
       <!--    NAVBAR    -->
-      <nav class="navbar navbar-light px-3 py-3">
+      <nav class="navbar navbar-light p-3">
          <div class="container-fluid">
             <a class="navbar-brand" href="#">
-            <img alt="turing_logo" height="60px" src="images/logo.svg"/>
+               <img alt="turing_logo" height="60px" src="images/logo.svg"/>
             </a>
-            <a href="#">
-            </a>
-            <div style="display:flex">
-               <a href="#">
-               <img class="svg" src="images/menu.svg" alt="menu" height="100px" width="100px">
-               </a>
-               <a href="#" id="switchDarkMode" title="Click to switch to dark mode">
-               <img class="svg" id="darkModeIcon" src="images/darkmode.svg" alt="menu" height="100px" width="100px">
-               </a>
+            <div class="ml-auto navbar-nav d-flex flex-row" style="column-gap:32px;">
+               <div class="navbar-nav d-flex flex-row align-items-center">
+                  <a class="nav-item nav-link">Test1</a>
+                  <a class="nav-item nav-link">Test1</a>
+                  <a class="nav-item nav-link">Test1</a>
                </div>
+               <a href="#" class="nav-item">
+                  <img class="svg" src="images/menu.svg" alt="menu" height="100px" width="100px">
+               </a>
+               <a href="#" class="nav-item" id="switchDarkMode" title="Click to switch to dark mode">
+                  <img class="svg" id="darkModeIcon" src="images/darkmode.svg" alt="menu" height="100px" width="100px">
+               </a>
+            </div>
          </div>
       </nav>
       <!--    MAIN    -->
