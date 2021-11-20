@@ -7,8 +7,8 @@ const tween = new TimelineMax();
 
 // Hero section
 
-tween.to(".ta-title", 1, { xPercent: window.innerWidth * 0.065, left: "0%" });
-tween.to(".logo", 1, { xPercent: - window.innerWidth * 0.05, left: "0%" }, 0);
+tween.to(".ta-title", 1, { xPercent: $('.ta-title').width() * 0.03 });
+tween.to(".logo", 1, { xPercent: - $('.logo').width() * 0.45 }, 0);
 tween.to(".logo", 1, { opacity: 1 }, "0.25");
 tween.to(".t-cta", 1, { opacity: 1 }, "0.25");
 
@@ -37,8 +37,6 @@ new ScrollMagic.Scene({
         const updateCounter = () => {
             const target = counter.getAttribute('target');
             const count = +counter.innerText;
-
-            const i = target / 35;
 
             if (count < target) {
                 counter.innerText =  Math.floor(count + 1);

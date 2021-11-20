@@ -12,8 +12,8 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Product Sans", sans-serif;
     overflow-x: hidden;
-    font-family: "Product Sans";
 }
 
 /* HERO */
@@ -38,8 +38,7 @@
 }
 
 .logo {
-    height: 100px;
-    scale: 2.5;
+    height: 13em;
     opacity: 0;
 }
 
