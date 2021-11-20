@@ -25,14 +25,14 @@
 }
 
 .header img{
-  z-index: -1;
-  width:100vw;
-  height:100vh;
-  object-fit:cover;
-  filter:brightness(69%);
-  
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
 
 /*--Bakcground/ This is by all means no the final backgroubd, just an example--*/
 
@@ -57,12 +57,17 @@
 Please remeber that the position may be adjusted "left "top" --*/
 
 .text-box {
-  width: 90%;
-  color: var(--color-text-light);
+  background-color: rgba(0, 0, 0, 0.445); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: .3px solid #f1f1f1;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 70%;
+  padding: 20px;
   text-align: center;
 }
 
