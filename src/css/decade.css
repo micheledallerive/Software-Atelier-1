@@ -60,7 +60,8 @@ Please remeber that the position may be adjusted "left "top" --*/
   background-color: rgba(0, 0, 0, 0.445); /* Black w/opacity/see-through */
   color: white;
   font-weight: bold;
-  border: .3px solid #f1f1f1;
+  border: .3px solid rgb(253, 101, 0);
+  border-radius: 10px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -74,7 +75,7 @@ Please remeber that the position may be adjusted "left "top" --*/
 .text-box h1 {
   font-size: 100px;
   margin-bottom:16px;
-  color: var(--color-text-light);
+  color: white;
 }
 
 
@@ -95,7 +96,7 @@ Please remeber that the position may be adjusted "left "top" --*/
 }
 
 .overview h1 {
-  color: white;
+  color: rgb(253, 101, 0);
   margin-bottom: 40px;
   padding: 50;
 }
@@ -129,7 +130,7 @@ h3 {
   text-align: center;
   font-weight: 600;
   margin: 10px 0;
-  color: var(--color-text-light);
+  color: white;
 }
 
 
@@ -156,7 +157,7 @@ h3 {
 
 .years-k {
   margin:auto;
-  border-radius: 1%;
+  border-radius: 10px;
   overflow:hidden;
   width: 30%;
   position:relative;
@@ -167,11 +168,11 @@ h3 {
   width:  500px;
   height: 500px;
   object-fit: cover;
-  border-radius: 1%;
+  border-radius: 10px;
 }
 
 h1 {
-  color: white;
+  color: rgb(253, 101, 0);
   width: 70%;
   margin: auto;
   text-align: center;
@@ -189,7 +190,8 @@ h1 {
   top: 0;
   left: 0;
   transition: 1s;
-  border-radius:1%;
+  border-radius:10px;
+  border: 2px solid rgba(202, 202, 202, 0.596)
 }
 
 .cover:hover {
