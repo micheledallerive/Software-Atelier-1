@@ -8,18 +8,47 @@
       <meta name="author" content="name surname"/>
       <title>Bailey Whitfield Diffie | Turing Awards</title>
       <base href="../../"/>
+      <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+      <link rel="manifest" href="images/favicon/site.webmanifest">
+      <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#f0571d">
+      <link rel="shortcut icon" href="images/favicon/favicon.ico">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+      <meta name="theme-color" content="#ffffff">
       <link rel="stylesheet" href="css/biography.css"/>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/menu.js"></script>
+      <script src="js/dark.js"></script>
    </head>
    <body>
       <!--    NAVBAR    -->
-      <nav class="navbar navbar-light px-3 py-3">
+      <nav class="navbar navbar-light p-3">
          <div class="container-fluid">
             <a class="navbar-brand" href="#">
-            <img alt="turing_logo" height="60px" src="images/logo.svg"/>
+               <img alt="turing_logo" height="60px" src="images/logo.svg"/>
             </a>
-            <a href="#">
-            <img src="images/menu.svg" alt="menu" height="100px" width="100px">
-            </a>
+            <div class="navbar-right">
+               <div class="nav-links">
+                  <a class="nav-item nav-link" href="index.html">Home</a>
+                  <a class="nav-item nav-link" href="html/TIMELINE/Timeline.html">Timeline</a>
+                  <a class="nav-item nav-link nav-link-decade" href="html/awards/2010/decade.html">Decade 2010</a>
+                  <a class="nav-item nav-link" href="??aboutus.html">About us</a>
+               </div>
+               <a href="#" class="nav-item" id="toggleMenu" title="Click to toggle the menu">
+                  <!--<img class="svg" src="images/menu.svg" alt="menu" height="100px" width="100px">-->
+                  <div id="toggleMenuSVG">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </div>
+               </a>
+               <a href="#" class="nav-item" id="switchDarkMode" title="Click to switch to dark mode">
+                  <img class="svg" id="darkModeIcon" src="images/darkmode.svg" alt="menu" height="100px" width="100px">
+               </a>
+            </div>
          </div>
       </nav>
       <!--    MAIN    -->
@@ -47,7 +76,7 @@
                 Diffie left Standfort Institute in 1973 persuing independent researches in cryptography. Through 1975 Diffie
                 worked with <a href="html/biographies/hellman.html">Martin Hellman</a> while
                 <a href="html/biographies/merkle.html">Ralph Merkle</a> joined in 1976.  </br>
-                The famous Hellman and Whitfield Diffie "New Directions in Cryptography" got published in 1976. The paper 
+                The famous Hellman and Whitfield Diffie "New Directions in Cryptography" got published in 1976. The paper
                 introduced a radical new method of distributing cryptographic keys, granting secure transactions, communications or any online interaction granting a different level of privacy and security. </br>
                 In 1992, Diffie was awarded an honorary docotrate by the Swiss Federal Institute of Technlogy in Zurich,
                 in 2010 the IEEEE Richard W. Hamming Medal with both Ralph Merkle and Martin Hellman.</br>
@@ -60,7 +89,7 @@
             </div>
             <!-- Element: Image -->
             <div class="col-md-5">
-               <img class="brd-round" src="images/decades/2010/2015_1.jpg">
+               <img class="brd-round" src="images/decades/2010/2015_D.png">
             </div>
          </div>
          <!--TODO: Add table
@@ -86,8 +115,8 @@
                   </tr>
                </tbody>
             </table>
-         </div>
-      </section>-->
+         </div>-->
+      </section>
       <!--TODO: Add link a tag
       <a class="link" href="#">This is a link</a>-->
       <section class="footer">

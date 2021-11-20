@@ -19,37 +19,48 @@
         <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
         <link rel="stylesheet" href="css/biography.css"/>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/menu.js"></script>
         <script src="js/dark.js"></script>
-   </head>
-   <body id="content" class="light-mode">
-      <!--    NAVBAR    -->
-      <nav class="navbar navbar-light px-3 py-3">
-         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-            <img alt="turing_logo" height="60px" src="images/logo.svg"/>
-            </a>
-            <a href="#">
-            </a>
-            <div style="display:flex">
-               <a href="#">
-               <img class="svg" src="images/menu.svg" alt="menu" height="100px" width="100px">
-               </a>
-               <a href="#" id="switchDarkMode" title="Click to switch to dark mode">
-               <img class="svg" id="darkModeIcon" src="images/darkmode.svg" alt="menu" height="100px" width="100px">
-               </a>
-               </div>
-         </div>
-      </nav>
+     </head>
+     <body>
+        <!--    NAVBAR    -->
+        <nav class="navbar navbar-light p-3">
+           <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                 <img alt="turing_logo" height="60px" src="images/logo.svg"/>
+              </a>
+              <div class="navbar-right">
+                 <div class="nav-links">
+                    <a class="nav-item nav-link" href="index.html">Home</a>
+                    <a class="nav-item nav-link" href="html/TIMELINE/Timeline.html">Timeline</a>
+                    <a class="nav-item nav-link nav-link-decade" href="html/awards/1980/decade.html">Decade 1980</a>
+                    <a class="nav-item nav-link" href="??aboutus.html">About us</a>
+                 </div>
+                 <a href="#" class="nav-item" id="toggleMenu" title="Click to toggle the menu">
+                    <!--<img class="svg" src="images/menu.svg" alt="menu" height="100px" width="100px">-->
+                    <div id="toggleMenuSVG">
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                    </div>
+                 </a>
+                 <a href="#" class="nav-item" id="switchDarkMode" title="Click to switch to dark mode">
+                    <img class="svg" id="darkModeIcon" src="images/darkmode.svg" alt="menu" height="100px" width="100px">
+                 </a>
+              </div>
+           </div>
+        </nav>
       <!--    MAIN    -->
       <section id="main" class="container clr-dark">
          <!-- Element: Title -->
-         <h1 id="mtitle" class="title-dark">John Cocke</h1>
+         <h1 id="mtitle" class="title">John Cocke</h1>
          <!-- Element: Split Screen -->
          <div class="row">
             <div class="col-md-7 paragraph">
                <!-- Element: Subtitle -->
-               <h2 id="sub1" class="subtitle-dark">Biography</h2>
+               <h2 id="sub1" class="subtitle">Biography</h2>
                <p>John Cocke was born in Charlotte, North Carolina (US), on the 30th May 1925. He passed in Valhalla,
                   New York, on the 16th July 2002. In 1946 he graduated with a Bachelor of Science in Engineering in
                   Mechanical Engineering from the Duke University and in 1956 he obtained his PhD in mathematics.
@@ -57,7 +68,7 @@
                   Simultaneously, he worked as visiting Professor at MIT and Courant Institute of Mathematical
                   Sciences of New York University.
                </p>
-               <h2  id="sub2" class="subtitle-dark" >Research</h2>
+               <h2  id="sub2" class="subtitle" >Research</h2>
                <p>
                  John Cocke made ground braking contributions to the structure of high performance computers and to
                  the blue print of optimizing compilers. His researches and findings are still used to a certain
@@ -69,7 +80,7 @@
                   <table class="tbl">
                      <thead>
                         <tr>
-                           <th colspan="2">Awards and Honors</th>
+                           <th class="subtitle" colspan="2">Awards and Honors</th>
                         </tr>
                      </thead>
                      <tbody>
