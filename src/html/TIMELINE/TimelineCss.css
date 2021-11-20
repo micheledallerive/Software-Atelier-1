@@ -2,7 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Courier New', sans-serif;
 }
 .header{
     min-height: 100vh;
@@ -15,6 +15,59 @@
     overflow: hidden;
 }
 /*---------------------------------------------------------------*/
+nav{
+    display: flex;
+    padding: 2% 5%;
+    justify-content: space-between;
+    align-items: right;
+    filter: brightness(70%);
+}
+nav img{
+     width: 140px;
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+
+/*---------------------------------------------------------------*/
+
+.text-box{
+        width: 90%;
+        color: #ffe7b6;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+}
+.text-box h1{
+        font-size: 60px;
+        filter: brightness(85%);
+
+}
+/*---------------------------------------------------------------*/
+.btn{
+         display: inline-block;
+         text-decoration: none;
+         color: #ffe7b6;
+         border: 1px solid #ffe7b6;
+         padding: 12px 34px;
+         font-size: 13px;
+         background: transparent;
+         position: relative;
+         cursor: pointer;
+}
+
+.btn:hover {
+        border: 1px solid #f44336;
+        background: #f0571d;
+        transition: 2s;
+}
+
+
+
+/*---------------------------------------------------------------*/
 .nav-links{
   flex: 1;
   text-align: right;
@@ -26,7 +79,7 @@
           position: relative;
 }
 .nav-links ul li a{
-          color: #fff;
+          color: #ffe7b6;
           text-decoration: none;
           font-size: 25px;
 }
@@ -43,26 +96,13 @@
 .nav-links ul li:hover::after{
   width: 100%;
 }
-/*---------------------------------------------------------------*/
-nav{
-    display: flex;
-    padding: 2% 5%;
-    justify-content: space-between;
-    align-items: right;
-}
-nav img{
-     width: 140px;
-}
-.nav-links{
-  flex: 1;
-  text-align: right;
-}
-/*---------------------------------------------------------------*/
 
+/*---------------------------------------------------------------*/
 p{
   font-size: 20px;
   text-align: right;
   font-weight: 200;
+  color:#ffe7b6;
 
 }
 .quote--container {
@@ -80,48 +120,13 @@ p{
 
 
 /*---------------------------------------------------------------*/
-.text-box{
-        width: 90%;
-        color: #fff;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-}
-.text-box h1{
-        font-size: 60px;
-
-}
-/*---------------------------------------------------------------*/
-.btn{
-         display: inline-block;
-         text-decoration: none;
-         color: #fff;
-         border: 1px solid #fff;
-         padding: 12px 34px;
-         font-size: 13px;
-         background: transparent;
-         position: relative;
-         cursor: pointer;
-}
-
-.btn:hover {
-        border: 1px solid #f44336;
-        background: #f0571d;
-        transition: 2s;
-}
-
-
-
-/*---------------------------------------------------------------*/
 #timelines .timelines {
 	flex-direction: column;
 	text-align: center;
 	max-width: 100%;
 	margin: 0 auto;
 	padding: 0px 0px;
-	background-color: #fff;
+	background-color: #ffe7b6;
 }
 }
 #timelines .all-timelines {
@@ -160,10 +165,11 @@ p{
 	font-weight: 600;
 	color: #f0571d;
   text-align: :right;
+  filter: brightness(85%);
 }
 
 #timelines .timeline-info h1:hover {
-	color: #ffffff;
+	color: #ffe7b6;
 }
 #timelines .timeline-info h2 {
 	font-size: 1.8rem;
@@ -171,11 +177,12 @@ p{
 	margin-top: 10px;
 }
 #timelines .timeline-info p {
-	color: white;
+	color: #ffe7b6;
 	text-align: left;
 }
+
 #timelines .timeline-vid {
-  flex-basis: 60%;
+  flex-basis: 50%;
 	transform: translate( 0px, -100px);
 	height: 170%;
 	width: 110%;
@@ -214,11 +221,14 @@ p{
       font-size: 25px;
       float:left;
       font-weight: 400;
-        filter:brightness(60%);
+      padding-left:20px;
+      filter:brightness(60%);
+      color: #ffe7b6;
     }
   .footer p{
       float:right;
       font-size: 25px;
-        filter:brightness(60%);
-
-  }
+      padding-right:20px;
+      filter:brightness(60%);
+      color: #ffe7b6;
+    }
