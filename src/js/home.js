@@ -1,5 +1,10 @@
 // DO NOT EDIT,
 // ONLY AFFECTS HOMEPAGE
+history.scrollRestoration = "manual";
+
+$(window).on("beforeunload", function () {
+    $(this).scrollTop(0)
+});
 
 const controller = new ScrollMagic.Controller();
 
@@ -7,10 +12,10 @@ const tween = new TimelineMax();
 
 // Hero section
 
-tween.to(".ta-title", 1, { xPercent: $('.ta-title').width() * 0.03 });
-tween.to(".logo", 1, { xPercent: - $('.logo').width() * 0.45 }, 0);
-tween.to(".logo", 1, { opacity: 1 }, "0.25");
-tween.to(".t-cta", 1, { opacity: 1 }, "0.25");
+tween.to(".ta-title", 1, {xPercent: $('.ta-title').width() * 0.03});
+tween.to(".logo", 1, {xPercent: -$('.logo').width() * 0.45}, 0);
+tween.to(".logo", 1, {opacity: 1}, "0.25");
+tween.to(".t-cta", 1, {opacity: 1}, "0.25");
 
 const scene = new ScrollMagic.Scene({
     triggerElement: ".hero",
@@ -32,17 +37,17 @@ new ScrollMagic.Scene({
     triggerElement: ".project",
     // triggerHook: "onLeave",
     duration: "100%"
-}).on("start", function() {
+}).on("start", function () {
     counters.forEach(counter => {
         const updateCounter = () => {
             const target = counter.getAttribute('target');
             const count = +counter.innerText;
 
             if (count < target) {
-                counter.innerText =  Math.floor(count + 1);
+                counter.innerText = Math.floor(count + 1);
                 setTimeout(updateCounter, 1);
             } else {
-                counter.innerText =  target;
+                counter.innerText = target;
             }
         }
         updateCounter();
@@ -73,8 +78,8 @@ new ScrollMagic.Scene({
     .addTo(controller);
 
 function changeToDark() {
-    $("#darkModeSectionIcon").attr("src","images/darkmode-o.svg");
-    $("#darkModeSectionText").attr("src","images/dark-o.svg");
+    $("#darkModeSectionIcon").attr("src", "images/darkmode-o.svg");
+    $("#darkModeSectionText").attr("src", "images/dark-o.svg");
 }
 
 new ScrollMagic.Scene({
@@ -100,7 +105,7 @@ new ScrollMagic.Scene({
     triggerHook: "onLeave",
     offset: "-300",
     duration: "40%",
-}).setTween(new TimelineMax().to(".explore-text", 1, { opacity: 1 }))
+}).setTween(new TimelineMax().to(".explore-text", 1, {opacity: 1}))
     // .addIndicators()
     .addTo(controller);
 
