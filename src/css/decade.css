@@ -84,7 +84,7 @@ Please remeber that the position may be adjusted "left "top" --*/
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/decades/banner2.png);
   background-position: center;
   background-size: cover;
-  border-radius: 20px;
+  border-radius: 1%;
   text-align: center;
   padding: 50px 0;
 }
@@ -151,7 +151,7 @@ h3 {
 
 .years-k {
   margin:auto;
-  border-radius:10px;
+  border-radius:1%;
   overflow:hidden;
   width: 30%;
   position:relative;
@@ -162,6 +162,7 @@ h3 {
   width:  500px;
   height: 500px;
   object-fit: cover;
+  border-radius: 1%;
 }
 
 h1 {
