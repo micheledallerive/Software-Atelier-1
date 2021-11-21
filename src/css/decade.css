@@ -5,8 +5,7 @@
 * {
   margin: 0;
   padding: 0;
-  
-  
+  font-family: 'Poppins', sans-serif;
 }
 
 
@@ -21,18 +20,16 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  
 }
 
 .header img{
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  height: 100%;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  z-index: -1;
+  width:100vw;
+  height:100vh;
+  object-fit:cover;
+  filter:brightness(30%);
 }
+
 
 /*--Bakcground/ This is by all means no the final backgroubd, just an example--*/
 
@@ -44,9 +41,6 @@
   background-size: cover;
   position: relative;
   overflow: hidden;
-  background-image: linear-gradient(to left,
-  #000000, #0a0507, #110910, #140e17, #15131d, #15131d,
-  #15131d, #15131d, #140e17, #110910, #0a0507, #000000);
 }
 
 
@@ -57,25 +51,19 @@
 Please remeber that the position may be adjusted "left "top" --*/
 
 .text-box {
-  background-color: rgba(0, 0, 0, 0.445); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-  border: .3px solid rgb(253, 101, 0);
-  border-radius: 10px;
+  width: 90%;
+  color: var(--color-text-light);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 70%;
-  padding: 20px;
   text-align: center;
 }
 
 .text-box h1 {
-  font-size: 100px;
+  font-size: 50px;
   margin-bottom:16px;
-  color: white;
+  color: var(--color-text-light);
 }
 
 
@@ -90,20 +78,19 @@ Please remeber that the position may be adjusted "left "top" --*/
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/decades/banner2.png);
   background-position: center;
   background-size: cover;
-  border-radius: 1%;
+  border-radius: 20px;
   text-align: center;
   padding: 50px 0;
 }
 
 .overview h1 {
-  color: rgb(253, 101, 0);
+  color: var(--color-text-light);
   margin-bottom: 40px;
   padding: 50;
 }
 
 .overview p{
   font-size:.5em;
-  color: white
 }
 
 
@@ -130,7 +117,7 @@ h3 {
   text-align: center;
   font-weight: 600;
   margin: 10px 0;
-  color: white;
+  color: var(--color-text-light);
 }
 
 
@@ -140,39 +127,32 @@ h3 {
 /* YEARS covers entire format of the section / YEAR-k is Award- specific --*/
 
 .years {
-	flex-direction: column;
-	text-align: center;
-	max-width: 100%;
-	margin: 0 auto;
-	padding: 150px 25px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 32px 64px;
 }
 
 .years-row{
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  grid-gap:30px;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-gap:32px;
 }
 
 .years-k {
   margin:auto;
-  border-radius: 10px;
+  border-radius:10px;
   overflow:hidden;
-  width: 30%;
   position:relative;
 }
 
 .years-k img {
-  float: left;
-  width:  500px;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 10px;
+  height: auto;
+  width: 100%;
 }
 
 h1 {
-  color: rgb(253, 101, 0);
+  color: var(--color-text);
   width: 70%;
   margin: auto;
   text-align: center;
@@ -181,26 +161,24 @@ h1 {
 
 
 /*-- Hover/Cover elements --*/
+
 .cover {
   background: transparent;
-  height: 500px;
-  width: 500px;;
+  height: 100%;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   transition: 1s;
-  border-radius:10px;
-  border: 2px solid rgba(202, 202, 202, 0.596)
 }
 
 .cover:hover {
-  background: rgba(253, 101, 0, 0.37);
-  
+  background: rgba(226, 0, 0, 0.7);
 }
 
 .cover h3 {
   font-weight: 600;
-  color: white;
+  color: var(--color-text-light);
   font-size: 26px;
 }
 
@@ -217,58 +195,7 @@ h1 {
   opacity: 1;
 }
 
-.button {
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 18px 34px;
-  font-size: 20px;
-  background: transparent;
-  position: relative;
-  cursor: pointer;
+.text-box .button{
+  border-color:var(--color-text-light);
+  color:var(--color-text-light);
 }
-
-.button:hover {
- border: 1px solid rgba(255, 104, 4, 0.411);
- background: rgba(255, 104, 4, 0.411);
- transition: .5s;
-}
-
-/*-- Footer elements --*/
-
-.footer {
-	padding: 30px;
- background-image: linear-gradient(to left,
-     #000000, #0a0507, #110910, #140e17, #15131d, #15131d,
-     #15131d, #15131d, #140e17, #110910, #0a0507, #000000);
-	color: white;
-	color: white;
-}
-	.footer {
-      width: 50%;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .footer {
-      width: 100%;
-      text-align: center;
-      padding: 32px 0;
-
-    }
-
-    .footer h4 {
-      font-size: 25px;
-      float:left;
-      font-weight: 400;
-      padding-left:20px;
-        filter:brightness(60%);
-    }
-  .footer p{
-      float:right;
-      font-size: 25px;
-      padding-right:20px;
-        filter:brightness(60%);
-
-  }

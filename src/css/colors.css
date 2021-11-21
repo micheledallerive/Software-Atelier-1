@@ -2,13 +2,13 @@
     /* Color Pairs for dark and light mode */
     --color-accent: #BA181B;
     --color-secondary: #D65551;
-    --color-text: #ffe7b6;
+    --color-text: #303030;
     --color-bg: #F1F1E6;
     --filter-invert: 0%;
 
     --color-bg-d: #003844;
 
-    --color-text-light: #C9C2C2; /* color text for the text always on a dark background (e.g. decade page) */
+    --color-text-light: #ffe7b6; /* color text for the text always on a dark background (e.g. decade page) */
 }
 
 /* Color classes */
