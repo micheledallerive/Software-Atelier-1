@@ -109,6 +109,9 @@ tbody td {
 
 /*--Footer--*/
 
+address{
+    margin:0!important;
+}
 .footer {
     width: 50%;
     position: relative;
@@ -118,7 +121,7 @@ tbody td {
   .footer {
     width: 100%;
     text-align: center;
-    padding: 32px 0;
+    padding: 2em 0 1em 0;
   }
 
   .footer h4 {
