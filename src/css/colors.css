@@ -5,7 +5,9 @@
     --color-text: #ffe7b6;
     --color-bg: #F1F1E6;
     --filter-invert: 0%;
+
     --color-bg-d: #003844;
+
     --color-text-light: #C9C2C2; /* color text for the text always on a dark background (e.g. decade page) */
 }
 
