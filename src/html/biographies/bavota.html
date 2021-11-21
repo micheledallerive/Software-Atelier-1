@@ -5,21 +5,50 @@
 <html lang="en">
    <head>
       <meta charset="UTF-8"/>
-      <meta name="author" content="name surname"/>
+      <meta name="author" content="Sofia d'Atri"/>
       <title>Gabriele Bavota | Turing Awards</title>
       <base href="../../"/>
+      <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+      <link rel="manifest" href="images/favicon/site.webmanifest">
+      <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#f0571d">
+      <link rel="shortcut icon" href="images/favicon/favicon.ico">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+      <meta name="theme-color" content="#ffffff">
       <link rel="stylesheet" href="css/biography.css"/>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/menu.js"></script>
+      <script src="js/dark.js"></script>
    </head>
    <body>
       <!--    NAVBAR    -->
-      <nav class="navbar navbar-light px-3 py-3">
+      <nav class="navbar navbar-light p-3">
          <div class="container-fluid">
             <a class="navbar-brand" href="#">
-            <img alt="turing_logo" height="60px" src="images/logo.svg"/>
+               <img alt="turing_logo" height="60px" src="images/logo.svg"/>
             </a>
-            <a href="#">
-            <img src="images/menu.svg" alt="menu" height="100px" width="100px">
-            </a>
+            <div class="navbar-right">
+               <div class="nav-links">
+                  <a class="nav-item nav-link" href="index.html">Home</a>
+                  <a class="nav-item nav-link" href="html/TIMELINE/Timeline.html">Timeline</a>
+                  <a class="nav-item nav-link nav-link-decade" href="html/awards/2000/decade.html">Decade 2000</a>
+                  <a class="nav-item nav-link" href="??aboutus.html">About us</a>
+               </div>
+               <a href="#" class="nav-item" id="toggleMenu" title="Click to toggle the menu">
+                  <!--<img class="svg" src="images/menu.svg" alt="menu" height="100px" width="100px">-->
+                  <div id="toggleMenuSVG">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </div>
+               </a>
+               <a href="#" class="nav-item" id="switchDarkMode" title="Click to switch to dark mode">
+                  <img class="svg" id="darkModeIcon" src="images/darkmode.svg" alt="menu" height="100px" width="100px">
+               </a>
+            </div>
          </div>
       </nav>
       <!--    MAIN    -->
@@ -31,41 +60,16 @@
             <div class="col-md-7 paragraph">
                <!-- Element: Subtitle -->
                <h2 class="subtitle">Biography</h2>
-               <p>Sir Timothy John Berners-Lee OM KBE FRS FREng FRSA FBCS (born 8 June 1955), also known as TimBL, is
-                  an English computer scientist best known as the inventor of the World Wide Web. He is a Professorial
-                  Fellow of Computer Science at the University of Oxford and a professor at the Massachusetts
-                  Institute of Technology (MIT). Berners-Lee proposed an information management system on 12 March
-                  1989, then implemented the first successful communication between a Hypertext Transfer Protocol
-                  (HTTP) client and server via the Internet in mid-November.
+               <p>Gabriele Bavota was born in Napoli (Italy) on November, 19th, 1985.<br/>He received (cum laude) the Laurea in Computer Science from the University of Salerno (Italy) in 2009 defending a thesis on Traceability Management, advised by Prof. Andrea De Lucia and Prof. Rocco Oliveto.<br/>He received the PhD in Computer Science from the University of Salerno in 2013.<br/>He currently works as an Associate Professor at the Faculty of Informatics of the Università della Svizzera italiana (USI), Lugano.<br/>Bavota is part of the Software Institute and leader of the SEART research group. He is the Principal Investigator of the DEVINTA ERC Starting grant.<br/>His research interests include software maintenance and evolution, mining software repositories, and empirical software engineering.
                </p>
-               <h2  class="subtitle" >Research</h2>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet vel diam suscipit tristique.
-                  Donec mattis mi felis, vel ultricies ante porta sit amet. Pellentesque vel purus in diam maximus
-                  ultrices. Integer magna sem, ornare et tellus id, sodales convallis ante. Maecenas dignissim metus
-                  eget orci pharetra, id tincidunt est maximus. Ut eget egestas magna, in mattis massa. Nulla finibus
-                  sem dictum diam accumsan, consectetur pharetra felis tempor. Donec ac pulvinar leo. Morbi porttitor
-                  felis magna, nec pellentesque ex varius eget. Donec vel ipsum bibendum, laoreet magna at, tempus
-                  massa. <br/> Quisque imperdiet odio mauris, sit amet sagittis libero vestibulum vitae. Pellentesque
-                  venenatis posuere metus, consequat convallis lorem scelerisque vitae. Nullam pellentesque, tellus et
-                  auctor dapibus, nisi ex placerat neque, vitae sagittis leo neque id tellus. Donec mollis eget leo
-                  vel pellentesque. Cras sagittis dui vel nulla faucibus malesuada. Nullam imperdiet purus eget mi
-                  facilisis tristique.<br/>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet vel diam suscipit tristique.
-                  Donec mattis mi felis, vel ultricies ante porta sit amet. Pellentesque vel purus in diam maximus
-                  ultrices. Integer magna sem, ornare et tellus id, sodales convallis ante. Maecenas dignissim metus
-                  eget orci pharetra, id tincidunt est maximus. Ut eget egestas magna, in mattis massa. Nulla finibus
-                  sem dictum diam accumsan, consectetur pharetra felis tempor. Donec ac pulvinar leo. Morbi porttitor
-                  felis magna, nec pellentesque ex varius eget. Donec vel ipsum bibendum, laoreet magna at, tempus
-                  massa. 
-               </p>
-               <!--TODO: Add link button-->
-               <div class="d-flex justify-content-center align-items-center">
-                  <a href="#" class="button">Button</a>
-               </div>
+               <h2  class="subtitle" >Awards</h2>
+               <p>Bavota was the recipient of the 2018 ACM Sigsoft Early Career Researcher Award.<br/>He hasn't won a Turing Award (yet). Nominate him <a href="https://amturing.acm.org/call_for_nominations.cfm" target="_blank" class="link">here</a>.</p>
+               
+               
             </div>
             <!-- Element: Image -->
             <div class="col-md-5">
-               <img class="brd-round" src="images/decades/2020/2021.jpg">
+               <img class="brd-round" src="images/decades/2020/bavota.jpeg">
             </div>
          </div>
          <!--TODO: Add table-->
@@ -73,31 +77,78 @@
             <table class="tbl">
                <thead>
                   <tr>
-                     <th>Title</th>
-                     <th>Table</th>
-                     <th>Title</th>
+                     <th>Best/Distinguished Paper Award</th>
+                     <th>Venue</th>
+                     <th>Year</th>
                   </tr>
                </thead>
                <tbody>
                   <tr>
-                     <td>table data</td>
-                     <td>some data</td>
-                     <td>other data</td>
+                     <td>ACM Sigsoft Distinguished Paper Award<br/>An Empirical Study of Quick Remedy Commits</td>
+                     <td>ICPC</td>
+                     <td>2020</td>
                   </tr>
                   <tr>
-                     <td>hello fellow student</td>
-                     <td>there is so much data</td>
-                     <td>data is cool</td>
+                     <td>ACM SIGSOFT Distinguished Artifact Awards<br/>Taxonomy of Real Faults in Deep Learning Systems</td>
+                     <td>ICSE</td>
+                     <td>2020</td>
+                  </tr>
+                  <tr>
+                     <td>ACM Sigsoft Distinguished Paper Award<br/>Data-Driven Solutions to Detect API Compatibility Issues in Android: An Empirical Study</td>
+                     <td>MSR</td>
+                     <td>2019</td>
+                  </tr>
+                  <tr>
+                     <td>IEEE TCSE Distinguished Paper Award<br/>Are Bug Reports Enough for Text Retrieval-based Bug Localization?</td>
+                     <td>ICSME</td>
+                     <td>2018</td>
+                  </tr>
+                  <tr>
+                     <td>Best ERA Paper Award<br/>Towards Just-In-Time Refactoring Recommenders</td>
+                     <td>ICPC</td>
+                     <td>2018</td>
+                  </tr>
+                  <tr>
+                     <td>ACM Sigsoft Distinguished Paper Award<br/>Automatically Assessing Code Understandability: How Far Are We?</td>
+                     <td>ASE</td>
+                     <td>2017</td>
+                  </tr>
+                  <tr>
+                     <td>Best Tool Paper Award<br/>The Code Time Machine</td>
+                     <td>ICPC</td>
+                     <td>2017</td>
+                  </tr>
+                  <tr>
+                     <td>ACM Sigsoft Distinguished Paper Award<br/>When and Why Your Code Starts to Smell Bad</td>
+                     <td>ICSE</td>
+                     <td>2015</td>
+                  </tr>
+                  <tr>
+                     <td>ACM Sigsoft Distinguished Paper Award<br/>Optimizing Energy Consumption of GUIs in Android Apps: A Multi-objective Approach</td>
+                     <td>ESEC/FSE</td>
+                     <td>2015</td>
+                  </tr>
+                  <tr>
+                     <td>ACM Sigsoft Distinguished Paper Award<br/>Detecting Bad Smells in Source Code Using Change History Information</td>
+                     <td>ASE</td>
+                     <td>2013</td>
+                  </tr>
+                  <tr>
+                     <td>Best Paper Award<br/>When does a Refactoring Induce Bugs? An Empirical Study</td>
+                     <td>SCAM</td>
+                     <td>2012</td>
                   </tr>
                </tbody>
             </table>
          </div>
+         <!--TODO: Add link button-->
+               <div class="d-flex justify-content-center align-items-center">
+                  <a href="https://www.inf.usi.ch/faculty/bavota/#" class="button" target="_blank">Learn more</a>
+               </div>
       </section>
-      <!--TODO: Add link a tag-->
-      <a class="link" href="#">This is a link</a>
       <section class="footer">
          <h4>In memory of A.M. Turing</h4>
-         <p> Page made by: Name Surname
+         <p> Page made by: Sofia d'Atri
          </p>
       </section>
    </body>
