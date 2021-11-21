@@ -8,18 +8,47 @@
       <meta name="author" content="Nicola Perucchi"/>
       <title>Award 2018 | Turing Awards</title>
       <base href="../../../"/>
+      <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+      <link rel="manifest" href="images/favicon/site.webmanifest">
+      <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#f0571d">
+      <link rel="shortcut icon" href="images/favicon/favicon.ico">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+      <meta name="theme-color" content="#ffffff">
       <link rel="stylesheet" href="css/biography.css"/>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/menu.js"></script>
+      <script src="js/dark.js"></script>
    </head>
    <body>
       <!--    NAVBAR    -->
-      <nav class="navbar navbar-light px-3 py-3">
+      <nav class="navbar navbar-light p-3">
          <div class="container-fluid">
             <a class="navbar-brand" href="#">
-            <img alt="turing_logo" height="60px" src="images/logo.svg"/>
+               <img alt="turing_logo" height="60px" src="images/logo.svg"/>
             </a>
-            <a href="#">
-            <img src="images/menu.svg" alt="menu" height="100px" width="100px">
-            </a>
+            <div class="navbar-right">
+               <div class="nav-links">
+                  <a class="nav-item nav-link" href="index.html">Home</a>
+                  <a class="nav-item nav-link" href="html/timeline.html">Timeline</a>
+                  <a class="nav-item nav-link nav-link-decade" href="html/awards/2010/decade.html">Decade 2010</a>
+                  <a class="nav-item nav-link" href="html/about.html">About us</a>
+               </div>
+               <a href="#" class="nav-item" id="toggleMenu" title="Click to toggle the menu">
+                  <!--<img class="svg" src="images/menu.svg" alt="menu" height="100px" width="100px">-->
+                  <div id="toggleMenuSVG">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </div>
+               </a>
+               <a href="#" class="nav-item" id="switchDarkMode" title="Click to switch to dark mode">
+                  <img class="svg" id="darkModeIcon" src="images/darkmode.svg" alt="menu" height="100px" width="100px">
+               </a>
+            </div>
          </div>
       </nav>
       <!--    MAIN    -->
@@ -34,22 +63,22 @@
                <p>
                    In 2018 the Turing Award went to three people: Yoshua Bengio, Geoffrey Hinton, Yann LeCun.
                    <ul>
-                      <li>Yoshua Bengio was born on the 5<sup>th</sup> of March 1964 in Paris and is a computer scientist. 
-                           Bengio is a professor of computer science at the University of Montreal and his name is 
+                      <li>Yoshua Bengio was born on the 5<sup>th</sup> of March 1964 in Paris and is a computer scientist.
+                           Bengio is a professor of computer science at the University of Montreal and his name is
                            well established in the field of <strong>artificial intelligence</strong>.</li>
-                      <li>Geoffrey Everest Hinton was born on the 6<sup>th</sup> of December 1947 and is a Canadian computer scientist. 
-                            Hinton is well known in the field of computer science due to his contributions to the development of 
+                      <li>Geoffrey Everest Hinton was born on the 6<sup>th</sup> of December 1947 and is a Canadian computer scientist.
+                            Hinton is well known in the field of computer science due to his contributions to the development of
                             <strong>machine learning</strong> and <strong>deep learning</strong>.</li>
                       <li> Yann LeCun was born on the 8<sup>th</sup> of July in Paris and is a researcher and computer scientist.
                    </ul>
-                   The three researchers were awarded the Turing Award thanks to their research and engineering that have made deep neural 
+                   The three researchers were awarded the Turing Award thanks to their research and engineering that have made deep neural
                    networks a very important aspect of computing.
                </p>
                <br>
                <h3> Deep Neural Networks </h3>
-               In traditional computers, there is a program that imposes very specific instructions on the computer on how to perform certain computations. 
-               Whereas, a computer that makes use of <strong> deep learning</strong> (which is a subcategory of Artificial Intelligence), does 
-               not obey to a step-by-step set of instructions to perform certain functions. Rather, the computer uses an algorithm that allows it to extrapolate 
+               In traditional computers, there is a program that imposes very specific instructions on the computer on how to perform certain computations.
+               Whereas, a computer that makes use of <strong> deep learning</strong> (which is a subcategory of Artificial Intelligence), does
+               not obey to a step-by-step set of instructions to perform certain functions. Rather, the computer uses an algorithm that allows it to extrapolate
                tendecies from the input data, in order to relate it to the output data. For example the computer can relate the pixels of an image (i.e. input data) to the keyword "cat".
                <p>
                  <q>Artificial intelligence is now one of the fastest-growing areas in all of science and one of the most talked-about topics in society,</q>
@@ -63,7 +92,7 @@
                      <li>speech recognition;</li>
                      <li>and natural language understanding.</li>
                   </ul>
-               </p>  
+               </p>
             </div>
             <!-- Element: Image -->
             <div class="col-md-5">
