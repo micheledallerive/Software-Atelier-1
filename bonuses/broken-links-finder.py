@@ -1,6 +1,7 @@
 # BROKEN LINKS FINDER
 # Author: Michele Dalle Rive
 
+from posixpath import join
 import requests
 import os
 from bs4 import BeautifulSoup
@@ -15,7 +16,7 @@ def find_broken_links(path, html):
     soup = BeautifulSoup(html,features="html.parser")
     for link in soup.find_all("a"):
         url = link.get("href")
-        if url=="#": continue
+        if url=="#" or url is None: continue
         if is_absolute(url):
             try:
                 resp = requests.get(url)
@@ -25,8 +26,11 @@ def find_broken_links(path, html):
             except requests.exceptions.RequestException as e:
                 invalid_urls.append(url)
         else:
-            base_url = soup.find("base").get("href")
+            base_url = "./"
+            if not soup.find("base") is None:
+                base_url = soup.find("base").get("href")
             joined_path = os.path.join(os.path.dirname(path), base_url, url)
+            if "#" in joined_path: joined_path = joined_path.split("#")[0]
             if not os.path.exists(joined_path):
                 invalid_urls.append(url)
 
