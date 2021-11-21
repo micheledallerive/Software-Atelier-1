@@ -1,12 +1,12 @@
 :root { /* <-- Change colors here */
-  /* Color Pairs for dark and light mode */
-  --color-accent: #db821d;
-  --color-secondary: #d69851;
-  --color-text: #e7e7e7;
-  --color-bg: #e0e0d5;
-  --filter-invert: 0%;
-
-  --color-text-light: #f0e9e9; /* color text for the text always on a dark background (e.g. decade page) */
+    /* Color Pairs for dark and light mode */
+    --color-accent: #BA181B;
+    --color-secondary: #D65551;
+    --color-text: #303030;
+    --color-bg: #F1F1E6;
+    --filter-invert: 0%;
+    --color-bg-d: #003844;
+    --color-text-light: #C9C2C2; /* color text for the text always on a dark background (e.g. decade page) */
 }
 
 /* Color classes */
@@ -21,7 +21,7 @@ Classes used by the old dark/light mode switcher
 
 .clr-dark {
     color: var(--color-text-dark);
-} */ 
+} */
 
 .clr-accent {
     color: var(--color-accent);

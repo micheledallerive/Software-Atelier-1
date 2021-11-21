@@ -58,7 +58,6 @@ body {
 }
 
 .button {
-    display: inline-block;
     text-decoration: none;
     color: var(--color-text);
     border: 1px solid var(--color-text);
@@ -93,12 +92,12 @@ td {
 }
 
 thead th {
-    background: var(--color-light);
+    background: rgba(0, 0, 0, 0.4);
 }
 
 tbody td {
-    color: var(--color-light);
-    background: var(--color-secondary);
+    color: var(--color-text);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 /* Link */
