@@ -154,3 +154,7 @@
     height: 100vh;
     background: yellow;
 }
+
+.oy {
+    overflow-y: hidden;
+}

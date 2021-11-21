@@ -1,7 +1,7 @@
 let darkColors = {
   "--color-accent": "#F0571D",
   "--color-secondary": "#F0A266",
-  "--color-text": "#C9C2C2",
+  "--color-text": "#ffe7b6",
   "--color-bg": "#003844",
   "--filter-invert": "100%"
 }

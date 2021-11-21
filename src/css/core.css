@@ -4,37 +4,27 @@
 /* Loading colors */
 @import 'colors.css';
 
-/*@font-face {
+@font-face {
   font-family: 'Product Sans';
   font-style: normal;
   font-weight: 400;
   src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
 }
 
-*/
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Nunito:wght@200;300&display=swap');
-html {
-	font-size: 1.25rem;
-	font-family: 'Nunito', sans-serif;
-	scroll-behavior: smooth;
-}
-
-
-
-
 
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: Product Sans;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to left,
-  #000000, #0a0507, #110910, #140e17, #15131d, #15131d,
-  #15131d, #15131d, #140e17, #110910, #0a0507, #000000);
+    background: var(--color-bg);
     color: var(--color-text);
     font-size: 1.25em;
     transition: all .25s;
 }
 
+.navbar-brand img {
+    height: 75px;
+}
 /* Base components*/
 
 .title {
@@ -68,13 +58,18 @@ body {
     position: relative;
     cursor: pointer;
     transition: .5s;
-  }
+}
 
-  .button:hover {
-    border: 1px solid #A4161A;
+.button:hover {
+    border: 1px solid var(--color-accent);
     background: var(--color-accent);
     color:white;
-  }
+}
+
+.button-light{
+    color:var(--color-text-light);
+    border-color:var(--color-text-light);
+}
 /* Table */
 table {
     margin: 40px 0 40px 0;
