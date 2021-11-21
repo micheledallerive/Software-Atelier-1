@@ -1,3 +1,6 @@
+# BROKEN LINKS FINDER
+# Author: Michele Dalle Rive
+
 import requests
 import os
 from bs4 import BeautifulSoup
