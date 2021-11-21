@@ -18,27 +18,39 @@
      <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
      <meta name="theme-color" content="#ffffff">
      <link rel="stylesheet" href="css/biography.css"/>
-     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+     <script src="js/jquery.min.js"></script>
+     <script src="js/menu.js"></script>
      <script src="js/dark.js"></script>
-   <body>
-      <!--    NAVBAR    -->
-      <nav class="navbar navbar-light px-3 py-3">
-         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-            <img alt="turing_logo" height="60px" src="images/logo.svg"/>
-            </a>
-            <a href="#">
-            </a>
-            <div style="display:flex">
-               <a href="#">
-               <img class="svg" src="images/menu.svg" alt="menu" height="100px" width="100px">
-               </a>
-               <a href="#" id="switchDarkMode" title="Click to switch to dark mode">
-               <img class="svg" id="darkModeIcon" src="images/darkmode.svg" alt="menu" height="100px" width="100px">
-               </a>
-               </div>
-         </div>
-      </nav>
+  </head>
+  <body>
+     <!--    NAVBAR    -->
+     <nav class="navbar navbar-light p-3">
+        <div class="container-fluid">
+           <a class="navbar-brand" href="#">
+              <img alt="turing_logo" height="60px" src="images/logo.svg"/>
+           </a>
+           <div class="navbar-right">
+              <div class="nav-links">
+                 <a class="nav-item nav-link" href="index.html">Home</a>
+                 <a class="nav-item nav-link" href="html/TIMELINE/Timeline.html">Timeline</a>
+                 <a class="nav-item nav-link nav-link-decade" href="html/awards/1990/decade.html">Decade 1990</a>
+                 <a class="nav-item nav-link" href="??aboutus.html">About us</a>
+              </div>
+              <a href="#" class="nav-item" id="toggleMenu" title="Click to toggle the menu">
+                 <!--<img class="svg" src="images/menu.svg" alt="menu" height="100px" width="100px">-->
+                 <div id="toggleMenuSVG">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                 </div>
+              </a>
+              <a href="#" class="nav-item" id="switchDarkMode" title="Click to switch to dark mode">
+                 <img class="svg" id="darkModeIcon" src="images/darkmode.svg" alt="menu" height="100px" width="100px">
+              </a>
+           </div>
+        </div>
+     </nav>
       <!--    MAIN    -->
       <section class="container clr-light">
          <!-- Element: Title -->
@@ -86,7 +98,7 @@
             </div>
             <!-- Element: Image -->
             <div class="col-md-5">
-               <img class="brd-round" src="images/decades/1960/1966.png">
+               <img class="brd-round" src="images/decades/1960/1966.jpg">
             </div>
          </div>
          <!--TODO: Add table-->

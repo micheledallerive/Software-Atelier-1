@@ -18,35 +18,48 @@
    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
    <meta name="theme-color" content="#ffffff">
    <link rel="stylesheet" href="css/biography.css"/>
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/menu.js"></script>
    <script src="js/dark.js"></script>
-      <!--    NAVBAR    -->
-      <nav class="navbar navbar-light px-3 py-3">
-         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+</head>
+<body>
+   <!--    NAVBAR    -->
+   <nav class="navbar navbar-light p-3">
+      <div class="container-fluid">
+         <a class="navbar-brand" href="#">
             <img alt="turing_logo" height="60px" src="images/logo.svg"/>
-            </a>
-            <a href="#">
-            </a>
-            <div style="display:flex">
-               <a href="#">
-               <img class="svg" src="images/menu.svg" alt="menu" height="100px" width="100px">
-               </a>
-               <a href="#" id="switchDarkMode" title="Click to switch to dark mode">
-               <img class="svg" id="darkModeIcon" src="images/darkmode.svg" alt="menu" height="100px" width="100px">
-               </a>
+         </a>
+         <div class="navbar-right">
+            <div class="nav-links">
+               <a class="nav-item nav-link" href="index.html">Home</a>
+               <a class="nav-item nav-link" href="html/TIMELINE/Timeline.html">Timeline</a>
+               <a class="nav-item nav-link nav-link-decade" href="html/awards/1990/decade.html">Decade 1990</a>
+               <a class="nav-item nav-link" href="??aboutus.html">About us</a>
+            </div>
+            <a href="#" class="nav-item" id="toggleMenu" title="Click to toggle the menu">
+               <!--<img class="svg" src="images/menu.svg" alt="menu" height="100px" width="100px">-->
+               <div id="toggleMenuSVG">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
                </div>
+            </a>
+            <a href="#" class="nav-item" id="switchDarkMode" title="Click to switch to dark mode">
+               <img class="svg" id="darkModeIcon" src="images/darkmode.svg" alt="menu" height="100px" width="100px">
+            </a>
          </div>
-      </nav>
+      </div>
+   </nav>
       <!--    MAIN    -->
       <section id="main" class="container clr-dark">
          <!-- Element: Title -->
-         <h1 id="mtitle" class="title-dark">Ivan Sutherland</h1>
+         <h1 id="mtitle" class="title">Ivan Sutherland</h1>
          <!-- Element: Split Screen -->
          <div class="row">
             <div class="col-md-7 paragraph">
                <!-- Element: Subtitle -->
-               <h2 id="sub1" class="subtitle-dark">Biography and contributions</h2>
+               <h2 id="sub1" class="subtitle">Biography and contributions</h2>
                <p>
                  Ivan Edward Sutherland, age 83, was born in Hasting, Nebraska (US), on the 16th May 1938.
                  In 1959 he received his Bachelor of Science Degree from the Carnegie Institute of Technology in
@@ -78,7 +91,7 @@
                  Turing Award. For more information about his Turing award  follow the link below.
                </p>
                <div class="d-flex justify-content-center">
-                  <table class="tbl">
+                  <table class="tbl w-100">
                      <thead>
                         <tr>
                            <th colspan="2">Awards and Honors</th>
