@@ -195,7 +195,7 @@ h1 {
 
 .cover:hover {
   background: rgba(253, 101, 0, 0.37);
-  transform: scale(1.5)
+  
 }
 
 .cover h3 {
