@@ -20,7 +20,7 @@ tween.to(".t-cta", 1, {opacity: 1}, "0.25");
 const scene = new ScrollMagic.Scene({
     triggerElement: ".hero",
     triggerHook: "onLeave",
-    duration: "300%"
+    duration: "175%"
 }).setPin(".hero")
     .setTween(tween)
     // .addIndicators()
@@ -119,6 +119,6 @@ window.addEventListener("scroll", () => {
     if (scrolled === scrollable) {
         setInterval(() => {
             window.location.href = redirect;
-        }, 1000);
+        }, 750);
     }
 })
