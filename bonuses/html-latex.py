@@ -1,3 +1,6 @@
+# HTML TO LATEX CONVERTER
+# Author: Michele Dalle Rive
+
 import os
 import shutil
 import glob
