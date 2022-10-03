@@ -1,5 +1,5 @@
 # Software Atelier 1 - Turing Awards
-A website build in HTML, CSS, Javascript as a group project for the Software Atelier 1 course in the 2021 fall semester.
+A website built in HTML, CSS, Javascript as a group project for the Software Atelier 1 course in the 2021 fall semester.
 
 ## Repository structure
 - The /src/ folder contains the source code of the website. The entry point is the index.html file.
